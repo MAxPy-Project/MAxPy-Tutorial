@@ -1,3 +1,6 @@
 poly1*/*
 *.csv
 *.saif
+/__pycache__/
+/study*
+synth.ys
