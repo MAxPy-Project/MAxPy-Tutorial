@@ -8,8 +8,8 @@ circuit.set_group("study_no_1")
 circuit.set_synth_tool(None)
 circuit.set_results_filename("output.csv")
 circuit.parameters = {
-    "[[MULTIPLIER_TYPE]]": ["LoBa", "Roba", "Drum", "Tosam"],
-    "[[MULTIPLIER_K]]": ["1", "2", "3"],
+    "[[MULTIPLIER_TYPE]]": ["DRUMu", "LOBA"],
+    "[[MULTIPLIER_K]]": ["4", "5", "6"],
     "[[ADDER_TYPE]]": ["copyA", "eta1", "loa", "trunc0"],
     "[[ADDER_K]]": ["1", "2", "3", "4"],
 }

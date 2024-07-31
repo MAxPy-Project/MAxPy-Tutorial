@@ -5,11 +5,12 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import accuracy_score
 
 def testbench_run(ckt=None, results_filename=None):
-    lin = ckt.poly1()
+    lin = ckt.top()
     rst = results.ResultsTable(results_filename, ["mape", "mae", "accuracy"])
     print(f">>> testbench init - circuit: {lin.name()}, area: {lin.area}, parameters: {lin.parameters}")
     y_true = []
     y_pred = []
+    count = 0
     for a in range(-128, 128):
         lin.set_a(a)
         for b in range(-128, 128):
